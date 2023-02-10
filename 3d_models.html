@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fotos</title>
+    <title>Places</title>
     <!-- Иконка вкладки -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -17,7 +17,6 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <!-- ссылки для того, чтобы работала кнопка в малом окне -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -29,8 +28,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- Наш стиль CSS -->
-
-    <!-- стиль для квадратных фото -->
     <style>
       .figure-photos {
         width: 100%;
@@ -40,20 +37,32 @@
         object-fit: cover; /*Вписываем фотографию в область */
         overflow: hidden;
       }
+      .container {
+        display: flex;
+        align-items: flex-start;
+      }
+      .item-top {
+        vertical-align: top;
+      }
       .navbar {
-        background-color: rgb(66, 121, 107);
+        background-color: #42796b;
+      }
+      .card:hover {
+        background-color: rgba(66, 121, 107, 0.2);
       }
     </style>
   </head>
   <body>
     <!-- навигационный тулбар наверху страницы -->
+
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <!-- мой логотип в верхнем тулбаре -->
         <!-- p-0 - класс, указывающий отсутствие отступов
          -->
-         <a class="nav-link" aria-current="page" href="index.html">
-          <img src="T (1).png" alt="logo" width="30"
+        <!-- <a class="navbar-brand p-0" href="#"> -->
+        <a class="nav-link" aria-current="page" href="index.html"
+          ><img src="T (1).png" alt="logo" width="30"
         /></a>
         <!-- Кнопка появляется только на моб устройствах -->
         <button
@@ -114,132 +123,66 @@
     <div class="row">
       <!-- строка 1 -->
       <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos max-width: 100% max-height: 100%" src="photos/1.jpg" alt="exmpl" />
+        <img
+          class="figure-photos max-width: 100% max-height: 100%"
+          src="renders/1_1.jpg"
+          alt="exmpl"
+        />
       </div>
       <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/2.jpg" alt="exmpl" />
+        <img class="figure-photos" src="renders/1_2.jpg" alt="exmpl" />
       </div>
       <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/3.jpg" alt="exmpl" />
+        <img class="figure-photos" src="renders/1_3.jpg" alt="exmpl" />
       </div>
     </div>
     <div class="row">
       <!-- строка 2 -->
       <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/4.jpg" alt="exmpl" />
+        <img
+          class="figure-photos max-width: 100% max-height: 100%"
+          src="renders/2_1.jpg"
+          alt="exmpl"
+        />
       </div>
       <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/5.jpg" alt="exmpl" />
+        <img class="figure-photos" src="renders/2_2.jpg" alt="exmpl" />
       </div>
       <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/6.jpg" alt="exmpl" />
+        <img class="figure-photos" src="renders/2_3.jpg" alt="exmpl" />
       </div>
-    </div>
-    <div class="row">
-      <!-- строка 3 -->
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/7.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/8.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/9.jpg" alt="exmpl" />
-      </div>
-    </div>
-    <div class="row">
-      <!-- строка 4 -->
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/10.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/11.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/12.jpg" alt="exmpl" />
-      </div>
-    </div>
-    <div class="row">
-      <!-- строка 5 -->
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/13.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/14.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/15.jpg" alt="exmpl" />
-      </div>
-    </div>
-    <div class="row">
-      <!-- строка 6 -->
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/16.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/17.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/18.jpg" alt="exmpl" />
-      </div>
-    </div>
-    <div class="row">
-      <!-- строка 7 -->
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/19.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/20.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/21.jpg" alt="exmpl" />
-      </div>
-    </div>
-    <div class="row">
-      <!-- строка 8 -->
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/22.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/23.jpg" alt="exmpl" />
-      </div>
-      <div class="col-4 text-center d-inline-block">
-        <img class="figure-photos" src="photos/24.jpg" alt="exmpl" />
-      </div>
-    </div>
-
-    </div>
-    
-
-    <!-- <div class="container text-center my-5">
       <div class="row">
-        <div class="col-lg-6 col-md-8 mx-auto">
+        <!-- строка 3 -->
+        <div class="col-4 text-center d-inline-block">
           <img
-            class="rounded-img"
-            src="photo_2023-01-02_15-00-18.jpg"
+            class="figure-photos max-width: 100% max-height: 100%"
+            src="renders/3_1.jpg"
             alt="exmpl"
           />
-          <h1 class="fw-light">Hi! I'm Tanya.</h1>
-          <p class="lead text-muted">
-            I like traveling, watching interesting place and communicate with
-            different people
-          </p>
-          <a
-            href="https://www.instagram.com/luckyhare20471/"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            To my Instagram
-          </a>
-          <a
-            href="https://vk.com/tanusha20471"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            To my VK
-          </a>
+        </div>
+        <div class="col-4 text-center d-inline-block">
+          <img class="figure-photos" src="renders/3_2.jpg" alt="exmpl" />
+        </div>
+        <div class="col-4 text-center d-inline-block">
+          <img class="figure-photos" src="renders/3_3.jpg" alt="exmpl" />
         </div>
       </div>
-    </div> -->
+      <div class="row">
+        <!-- строка 4 -->
+        <div class="col-4 text-center d-inline-block">
+          <img
+            class="figure-photos max-width: 100% max-height: 100%"
+            src="renders/4_1.jpg"
+            alt="exmpl"
+          />
+        </div>
+        <div class="col-4 text-center d-inline-block">
+          <img class="figure-photos" src="renders/4_2.jpg" alt="exmpl" />
+        </div>
+        <div class="col-4 text-center d-inline-block">
+          <img class="figure-photos" src="renders/4_3.jpg" alt="exmpl" />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
